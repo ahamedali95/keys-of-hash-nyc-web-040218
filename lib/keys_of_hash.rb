@@ -7,7 +7,7 @@ class Hash
         keys << key
       end
    end
+
+   keys
   end
-  
-  keys
 end
