@@ -3,7 +3,7 @@ class Hash
     keys = []
 
     self.each do |key, value|
-      if others.join(",").include?(value)
+      if others.include?(value)
         keys << key
       end
    end
