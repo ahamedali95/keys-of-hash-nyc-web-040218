@@ -1,9 +1,9 @@
 class Hash
-  def keys_of(arguments, *others)
+  def keys_of(*others)
     keys = []
 
     self.each do |key, value|
-      if value == arguments || others.join(",").include?(value)
+      if others.join(",").include?(value)
         keys << key
       end
    end
